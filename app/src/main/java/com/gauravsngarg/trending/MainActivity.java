@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.gauravsngarg.trending.activity.YouTubeVideoPlayerActivity;
+import com.gauravsngarg.trending.activity.VideosList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.trendingvideos){
-            Intent i = new Intent(MainActivity.this, YouTubeVideoPlayerActivity.class);
+            //Intent i = new Intent(MainActivity.this, YouTubeVideoPlayerActivity.class);
+            Intent i = new Intent(MainActivity.this, VideosList.class);
             startActivity(i);
         }
     }
